@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>演示新的效果</title>
+  
+</head>
+<body>
+	<div id="app">
+
+	</div>
+  <p>zheshji yiduanhau </p>
+	<style id="style">
+
+  </style >
+
+
+	
+	<script>
+       var app = document.getElementById("app");
+       
+       var n= 0;
+       var code= `
+         body{
+          margin: 0 auto;
+          width: 300px;
+          height: 200px;
+         	background: red;
+          font-size: 30px;
+          color: #fff;
+         };
+        
+       `
+     /*  var code = "abcd";*/
+       setInterval(function(){
+       	   app.innerHTML = code.substring(0,n);
+       	   style.innerHTML=code.substring(0,n);
+		   /*console.log(code.substring(0,n));*/
+		   n=n+1;
+
+       },100)
+  
+
+
+
+	</script>
+</body>
+</html>
